@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        '62-5': '62.5%',
         '125': '125%'
       }
     },
+    maxWidth: {
+      '1/2': '50%'
+    }
   },
   variants: {
     extend: {},
