@@ -5,7 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
     return (
-        <footer className="bg-green-900">
+        <footer className="bg-green-900 mt-20">
             <div className="container mx-auto py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 mb-28">
                     <div className="text-left">

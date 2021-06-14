@@ -1,8 +1,8 @@
-import './App.css';
 import Header from './Header'
 import Banner from './Banner'
 import Footer from './Footer'
 import Grid from './Grid'
+import Trust from './Trust'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Header />
       <Banner />
       <Grid />
+      <Trust />
       <Footer />
     </div>
   );

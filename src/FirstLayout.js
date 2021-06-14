@@ -8,7 +8,7 @@ const FirstLayout = () => {
                 <div className="relative">
                     <div className="overflow-hidden pb-125">
                         <div className="flex flex-col absolute top-0 left-0 w-full h-full">
-                            <div className="py-14 relative z-10 mx-auto max-w-lg flex flex-col justify-center items-center">
+                            <div className="py-14 relative z-10 mx-auto max-w-lg flex flex-col justify-center items-center text-center">
                                 <h2 className="pb-8 text-green-900 text-6xl font-bold">THIS IS FAR MORE THAN A BBQ.</h2>
                                 <p>Not only can you grill the best steak you'll have ever tasted - but wwhen it comes to pulled pork, pizza or paella, the EGG world is your (smoked) oyster.</p>
                             </div>
@@ -24,7 +24,7 @@ const FirstLayout = () => {
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 text-center">
                         <h3 className="text-4xl text-green-900 mb-5">What size is right for you?</h3>
                         <button className="bg-green-900 text-white">
                             <span>VIEW EGGS</span>
@@ -37,7 +37,7 @@ const FirstLayout = () => {
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 text-center">
                         <h3 className="text-4xl text-green-900 mb-5">What size is right for you?</h3>
                         <button className="bg-green-900 text-white">
                             <span>VIEW EGGS</span>
