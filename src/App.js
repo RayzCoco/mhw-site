@@ -3,6 +3,7 @@ import Banner from './Banner'
 import Footer from './Footer'
 import Grid from './Grid'
 import Trust from './Trust'
+import FoodCarousel from './FoodCarousel'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Banner />
       <Grid />
+      <FoodCarousel />
       <Trust />
       <Footer />
     </div>

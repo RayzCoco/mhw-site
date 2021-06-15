@@ -56,7 +56,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mb-12">
+                <div className="mb-12 text-center">
                     <h2 className="text-white text-8xl">Big Green Egg</h2>
                 </div>
                 <div>
