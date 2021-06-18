@@ -6,8 +6,8 @@ import chicken from './img/chicken.webp'
 const ThirdLayout = () => {
     return (
         <div className="mt-20">
-            <div className="grid grid-cols-3 mb-10">
-                <div className="col-span-2 row-span-2 relative">
+            <div className="grid grid-cols-1 md:grid-cols-3 mb-10 px-6 md:px-0">
+                <div className="col-span-1 md:col-span-2 row-span-2 relative">
                     <div className="relative overflow-hidden pb-125">
                         <div className="absolute top-0 left-0 w-full-h-full">
                             <img src={ bbq } alt="" />

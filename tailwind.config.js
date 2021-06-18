@@ -3,13 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      maxWidth: {
+        '1/2': '50%'
+      },
       spacing: {
         '62-5': '62.5%',
         '125': '125%'
       }
-    },
-    maxWidth: {
-      '1/2': '50%'
     }
   },
   variants: {

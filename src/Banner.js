@@ -14,11 +14,11 @@ const Banner = () => {
                         </div>
                     </div>
                     <div className="container z-10 flex justify-center mx-auto relative w-full h-full">
-                        <div className="flex flex-col items-center justify-center">
-                            <h2 className="text-white text-6xl">FLAVOUR AWAITS.</h2>
+                        <div className="flex flex-col items-center justify-center text-center">
+                            <h2 className="text-white text-6xl mb-5">FLAVOUR AWAITS.</h2>
                             <div className="mt-5">
                                 <button className="flex items-center bg-yellow-500 py-4 px-6 rounded-full">
-                                    <span className="mr-4">WHET YOUR APPETITE</span>
+                                    <span className="mr-4 font-bold text-sm md:text-base">WHET YOUR APPETITE</span>
                                     <PlayCircleFilledIcon />
                                 </button>
                             </div>

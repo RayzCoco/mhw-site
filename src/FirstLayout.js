@@ -3,12 +3,12 @@ import imgRight from './img/green-egg-bottle-right.webp'
 
 const FirstLayout = () => {
     return (
-        <div className="grid grid-cols-3 pb-px">
-            <div className="col-span-2 row-span-2 relative overflow-hidden">
-                <div className="relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 pb-px px-6 md:px-0">
+            <div className="col-span-1 md:col-span-2 row-span-2 relative overflow-hidden">
+                <div className="relative border-green-900 border border-opacity-20">
                     <div className="overflow-hidden pb-125">
                         <div className="flex flex-col absolute top-0 left-0 w-full h-full">
-                            <div className="py-14 relative z-10 mx-auto max-w-lg flex flex-col justify-center items-center text-center">
+                            <div className="p-14 relative z-10 mx-auto max-w-lg flex flex-col justify-center items-center text-center">
                                 <h2 className="pb-8 text-green-900 text-6xl font-bold">THIS IS FAR MORE THAN A BBQ.</h2>
                                 <p>Not only can you grill the best steak you'll have ever tasted - but wwhen it comes to pulled pork, pizza or paella, the EGG world is your (smoked) oyster.</p>
                             </div>
@@ -19,7 +19,7 @@ const FirstLayout = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 row-span-1 relative overflow-hidden bg-green-700 bg-opacity-20">
+            <div className="col-span-1 relative overflow-hidden bg-green-700 bg-opacity-20">
                 <div className="relative overflow-hidden pb-125">
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />
@@ -32,7 +32,7 @@ const FirstLayout = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 row-span-1">
+            <div className="col-span-1 relative overflow-hidden">
                 <div className="relative overflow-hidden pb-125">
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />

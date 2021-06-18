@@ -5,8 +5,8 @@ import video from './iceborne.webm'
 
 const SecondLayout = () => {
     return (
-        <div className="grid grid-cols-3">
-            <div className="col-span-2 row-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 px-6 md:px-0">
+            <div className="col-span-1 md:col-span-2 row-span-1">
                 <div className="relative">
                     <div className="overflow-hidden relative pb-62-5">
                         <div className="absolute top-0 left-0 flex w-full h-full">
@@ -24,7 +24,7 @@ const SecondLayout = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 row-span-1">
+            <div className="hidden md:block col-span-1 row-span-1">
                 <div className="relative overflow-hidden pb-125"></div>
             </div>
             <div className="col-span-1 row-span-2">
