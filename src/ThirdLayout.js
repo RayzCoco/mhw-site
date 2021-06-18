@@ -20,10 +20,10 @@ const ThirdLayout = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 w-1/2">
+                    <div className="md:absolute md:bottom-0 md:left-0 md:w-1/2">
                         <div className="relative bg-white">
                             <div className="overflow-hidden relative pb-125">
-                                <div className="absolute top-0 right-0 z-10">
+                                <div className="hidden md:block absolute top-0 right-0 z-10">
                                     <div className="flex p-6">
                                         <span className="bg-green-900 text-white px-2 py-0.5 rounded mr-4">EXCLUSIVE</span>
                                         <span className="bg-green-900 text-white px-2 py-0.5 rounded">EXPERIENCE BOX</span>
@@ -79,7 +79,7 @@ const ThirdLayout = () => {
                 </div>
             </div>
             <div className="text-center">
-                <a href="#" className="inline-block">SEE ALL COLLECTIONS</a>
+                <a href="#" className="inline-block bg-green-800 bg-opacity-10 text-green-900 text-xs md:text-base rounded-full px-6 py-4 font-bold">SEE ALL COLLECTIONS</a>
             </div>
         </div>
     );
