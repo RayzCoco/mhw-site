@@ -3,7 +3,30 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import { useState, useEffect } from 'react'
+
 const Header = () => {
+    const [y, setY] = useState(window.scrollY)
+
+    useEffect(() => {
+        setY(window.scrollY)
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    })
+
+    const handleScroll = (e) => {
+        const target = e.currentTarget
+
+        if(y > target.scrollY) {
+            console.log('scroll up')
+        }else if(y < target.scrollY) {
+            console.log('scroll down')
+        }
+        setY(window.scrollY)
+    }
+
     return (
         <header className="fixed top-0 left-0 w-full z-20">
             <div className="bg-green-900 p-3 alert-bar relative">
@@ -20,7 +43,7 @@ const Header = () => {
                     <CloseIcon />
                 </button>
             </div>
-            <div className="bg-white px-6 py-4">
+            <div className="bg-white px-6 py-4 mb-header">
                 <div className="flex justify-between items-center">
                     <button>
                         <MenuIcon />
@@ -34,9 +57,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="transform translate-y-10">
+            <div className="main-header">
                 <div className="container mx-auto header-low">
-                    <div className="flex justify-between items-center px-9 md:px-0 text-white">
+                    <div className="flex justify-between items-center px-6 md:px-0 text-white">
                         <div className="md:hidden">
                             <button>
                                 <MenuIcon />
@@ -65,7 +88,7 @@ const Header = () => {
                                     <a href="#">GUIDES</a>
                                 </li>
                             </ul>
-                            <button className="mr-4">
+                            <button className="mr-2">
                                 <SearchIcon />
                             </button>
                             <a href="#" className="bg-white bg-opacity-20 rounded-full w-8 h-8 box-border px-3 py-1">0</a>

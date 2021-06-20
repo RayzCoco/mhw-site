@@ -17,3 +17,11 @@
     z-index: 1;
     left: 0;
 }
+
+.main-header {
+    @apply transform transition-all duration-500;
+}
+
+.mb-header {
+    @apply transform -translate-y-full opacity-0 transition-all duration-500;
+}
