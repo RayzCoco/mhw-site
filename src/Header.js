@@ -1,6 +1,7 @@
 import CloseIcon from '@material-ui/icons/Close';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SearchIcon from '@material-ui/icons/Search';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Header = () => {
     return (
@@ -19,11 +20,27 @@ const Header = () => {
                     <CloseIcon />
                 </button>
             </div>
+            <div className="bg-white px-6 py-4">
+                <div className="flex justify-between items-center">
+                    <button>
+                        <MenuIcon />
+                    </button>
+                    <div>Logo</div>
+                    <div className="flex items-center">
+                        <button className="mr-2">
+                            <SearchIcon />
+                        </button>
+                        <a href="#" className="bg-green-900 bg-opacity-20 rounded-full w-8 h-8 box-border px-3 py-1">0</a>
+                    </div>
+                </div>
+            </div>
             <div className="transform translate-y-10">
                 <div className="container mx-auto header-low">
                     <div className="flex justify-between items-center px-9 md:px-0 text-white">
                         <div className="md:hidden">
-                            <button>MENU</button>
+                            <button>
+                                <MenuIcon />
+                            </button>
                         </div>
                         <div className="hidden md:block">
                             <ul className="flex">
