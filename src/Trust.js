@@ -11,7 +11,7 @@ SwiperCore.use([Navigation])
 const Trust = () => {
     return (
         <div className="container mx-auto">
-            <h2 className="text-green-900 mb-6 px-6 md:px-0 text-4xl">TRUSTED BY THOSE IN THE KNOW</h2>
+            <h2 className="text-green-900 mb-6 px-6 md:px-0 text-xl md:text-4xl font-bold">TRUSTED BY THOSE IN THE KNOW</h2>
             <Swiper navigation slidesPerView={1} breakpoints={{
                 768: {
                     slidesPerView: 3,

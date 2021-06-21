@@ -8,9 +8,10 @@ SwiperCore.use([Navigation])
 const FoodCarousel = () => {
     return (
         <div className="container mx-auto mb-10">
-            <h2 className="text-green-900 text-2xl md:text-4xl mb-8 px-6 md:px-0">SEVEN WAYS TO COOK. INFINITE POSSIBILITIES.</h2>
+            <h2 className="text-green-900 text-xl md:text-4xl mb-8 px-6 md:px-0 font-bold">SEVEN WAYS TO COOK. INFINITE POSSIBILITIES.</h2>
             <Swiper navigation centeredSlides={ true } slidesPerView={1} breakpoints={{
                 768: {
+                    centeredSlides: false,
                     slidesPerView: 3
                 }
             }}>

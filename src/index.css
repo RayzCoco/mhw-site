@@ -18,10 +18,23 @@
     left: 0;
 }
 
+.bg-before-black::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10;
+}
+
 .main-header {
-    @apply transform transition-all duration-500;
+    @apply transform -translate-y-14 md:-translate-y-6 opacity-100 transition-all duration-300;
 }
 
 .mb-header {
-    @apply transform -translate-y-full opacity-0 transition-all duration-500;
+    @apply transform -translate-y-full opacity-0 transition-all duration-300 z-20;
+}
+
+.scroll-down .main-header, .scroll-up .main-header {
+    @apply transform -translate-y-full opacity-0 transition-all duration-300;
+}
+
+.scroll-up .mb-header {
+    @apply transform opacity-100 transition-all duration-300;   
 }

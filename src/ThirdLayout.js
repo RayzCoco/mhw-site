@@ -13,10 +13,10 @@ const ThirdLayout = () => {
                             <img src={ bbq } alt="" />
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="flex flex-col justify-between items-center h-full">
-                                <div className="p-9">Big Green Egg customers know what they like — and time and time again they've said they like these products the most. Take a look!</div>
-                                <h3>LATEST & GREATEST</h3>
-                                <div className="spacer pb-62-5 w-full"></div>
+                            <div className="flex flex-col justify-between items-center text-white h-full">
+                                <div className="p-6 md:p-9 text-sm md:text-base">Big Green Egg customers know what they like — and time and time again they've said they like these products the most. Take a look!</div>
+                                <h3 className="text-3xl font-bold text-center absolute md:relative top-0 left-0 flex justify-center items-center p-6 md:p-0 w-full h-full">LATEST & GREATEST</h3>
+                                <div className="spacer pb-62-5 w-full hidden md:block"></div>
                             </div>
                         </div>
                     </div>
@@ -34,10 +34,10 @@ const ThirdLayout = () => {
                                         <img src={ food } alt="" />
                                     </div>
                                 </div>
-                                <div className="absolute top-0 left-0 w-full h-full">
+                                <div className="absolute top-0 left-0 w-full h-full border md:border-none border-green-800 border-opacity-20">
                                     <div className="flex flex-col w-full h-full p-9 justify-end">
-                                        <h3>TOM KERRIDGE BARBECUE FEAST BOX</h3>
-                                        <div>$180</div>
+                                        <h3 className="text-green-900 font-bold">TOM KERRIDGE BARBECUE FEAST BOX</h3>
+                                        <div className="text-green-900">$180</div>
                                     </div>
                                 </div>
                             </div>
@@ -49,10 +49,10 @@ const ThirdLayout = () => {
                         <div className="absolute top-0 left-0 w-full h-full">
                             <img src={ tray } alt="" />
                         </div>
-                        <div className="absolute bottom-0 left-0 w-full h-full">
+                        <div className="absolute bottom-0 left-0 w-full h-full border md:border-none border-green-800 border-opacity-20">
                             <div className="flex flex-col w-full h-full p-9 justify-end">
-                                <h3>EGGSPANDER STARTER KIT</h3>
-                                <div>FROM $289</div>
+                                <h3 className="text-green-900 font-bold">EGGSPANDER STARTER KIT</h3>
+                                <div className="text-green-900">FROM $289</div>
                             </div>
                         </div>
                     </div>
@@ -60,19 +60,19 @@ const ThirdLayout = () => {
                 <div className="col-span-1">
                     <div className="relative overflow-hidden pb-125">
                         <div className="absolute top-0 right-0 z-10">
-                            <div className="flex p-6">
-                                <span className="bg-white bg-opacity-30 text-white px-2 py-0.5 rounded mr-4">ROASTING</span>
-                                <span className="bg-white bg-opacity-30 text-white px-2 py-0.5 rounded mr-4">SUNDAY</span>
-                                <span className="bg-white bg-opacity-30 text-white px-2 py-0.5 rounded">FAMILY</span>
+                            <div className="flex p-4 md:p-6">
+                                <span className="bg-white bg-opacity-30 text-white text-xs md:text-sm px-2 py-0.5 rounded mr-4">ROASTING</span>
+                                <span className="bg-white bg-opacity-30 text-white text-xs md:text-sm px-2 py-0.5 rounded mr-4">SUNDAY</span>
+                                <span className="bg-white bg-opacity-30 text-white text-xs md:text-sm px-2 py-0.5 rounded">FAMILY</span>
                             </div>
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <img src={ chicken } alt="" />
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="flex flex-col justify-end p-9 w-full h-full text-center">
-                                <div>RECIPE</div>
-                                <h3>ULTIMATE ROAST CHICKEN</h3>
+                            <div className="flex flex-col justify-end p-9 w-full h-full text-center text-white font-bold">
+                                <div className="text-sm">RECIPE</div>
+                                <h3 className="text-xl">ULTIMATE ROAST CHICKEN</h3>
                             </div>
                         </div>
                     </div>

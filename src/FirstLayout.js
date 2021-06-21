@@ -1,5 +1,6 @@
 import banner from './img/green-egg-bottle.webp'
 import imgRight from './img/green-egg-bottle-right.webp'
+import video from './iceborne.webm'
 
 const FirstLayout = () => {
     return (
@@ -8,9 +9,9 @@ const FirstLayout = () => {
                 <div className="relative border-green-900 border border-opacity-20">
                     <div className="overflow-hidden pb-125">
                         <div className="flex flex-col absolute top-0 left-0 w-full h-full">
-                            <div className="p-14 relative z-10 mx-auto max-w-lg flex flex-col justify-center items-center text-center">
-                                <h2 className="pb-8 text-green-900 text-6xl font-bold">THIS IS FAR MORE THAN A BBQ.</h2>
-                                <p>Not only can you grill the best steak you'll have ever tasted - but wwhen it comes to pulled pork, pizza or paella, the EGG world is your (smoked) oyster.</p>
+                            <div className="p-4 md:p-14 relative z-10 mx-auto max-w-2xl flex flex-col justify-center items-center text-center">
+                                <h2 className="pb-2 md:pb-8 text-green-900 text-4xl md:text-6xl font-bold">THIS IS FAR MORE THAN A BBQ.</h2>
+                                <p className="text-sm text-green-900 font-semibold">Not only can you grill the best steak you'll have ever tasted - but when it comes to pulled pork, pizza or paella, the EGG world is your (smoked) oyster.</p>
                             </div>
                             <div className="w-full h-full absolute top-0 left-0 z-0">
                                 <img src={ banner } alt="" />
@@ -24,27 +25,29 @@ const FirstLayout = () => {
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 text-center">
-                        <h3 className="text-4xl text-green-900 mb-5">What size is right for you?</h3>
-                        <button className="bg-green-900 text-white">
+                    <div className="absolute top-2/3 md:top-1/2 left-1/2 transform -translate-x-1/2 text-center">
+                        <h3 className="text-xl md:text-4xl text-green-900 mb-3 md:mb-5">What size is right for you?</h3>
+                        <button className="bg-green-900 px-4 py-3 rounded-full text-xs md:text-base text-white">
                             <span>VIEW EGGS</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 relative overflow-hidden">
+            <div className="col-span-1">
                 <div className="relative overflow-hidden pb-125">
-                    <div className="absolute top-0 left-0 z-0">
-                        <img src={ imgRight } alt="" />
+                    <div className="absolute top-0 left-0 w-full h-full bg-before-black">
+                        <video autoPlay muted loop className="absolute right-0 bottom-0 min-w-full min-h-full object-cover">
+                            <source src={ video } type="video/webm" />
+                        </video>
                     </div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 text-center">
-                        <h3 className="text-4xl text-green-900 mb-5">What size is right for you?</h3>
-                        <button className="bg-green-900 text-white">
-                            <span>VIEW EGGS</span>
-                        </button>
+                    <div className="absolute top-0 left-0 w-full h-full z-10 p-9">
+                        <div className="flex flex-col h-full justify-center text-center text-white">
+                            <span className="text-xs md:text-sm">RICHARD TURNER, CO-FOUNDER OF MEATOPIA UK</span>
+                            <h3 className="text-3xl font-bold">“THERE’S A CRAZY ALCHEMY THAT GOES ON INSIDE THE EGG. I’VE BEEN A FAN FROM DAY ONE”</h3>
+                        </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
     );
 }
