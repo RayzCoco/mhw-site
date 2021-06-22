@@ -16,13 +16,36 @@ const FoodCarousel = () => {
                 }
             }}>
                 <SwiperSlide>
+                    <a href="#">
+                        <div className="card">
+                            <div className="relative overflow-hidden pb-125">
+                                <div className="absolute top-0 left-0 w-full h-full">
+                                    <img src={ meat } alt="" />
+                                </div>
+                                <div className="absolute top-0 left-0 w-full h-full">
+                                    <div className="flex justify-center items-center w-full h-full">
+                                        <h3 className="text-white text-4xl font-bold">ROAST</h3>
+                                    </div>
+                                </div>
+                                <div className="absolute top-0 left-0 w-full h-full bg-green-900 card-overlay">
+                                    <div className="flex justify-center flex-col p-6 w-full h-full text-center text-white">
+                                        <div className="mb-6 text-2xl font-bold">SUNDAY LUNCH, ALFRESCO</div>
+                                        <p className="mb-6 text-sm">Convection cooking, with charcoal. As heat is deflected around your EGG you can roast at a stable, even temperature. Think roast chicken or pork belly; crisp skin, crackling and deliciously moist meat. Perfect for vegetables and whole fish too.</p>
+                                        <button className="font-bold pb-2 border-b inline-flex self-center" href="#">SHOP ACCESSORIES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="relative overflow-hidden pb-125">
                         <div className="absolute top-0 left-0 w-full h-full">
                             <img src={ meat } alt="" />
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">ROAST</h3>
+                                <h3 className="text-white text-4xl font-bold">LOW & SLOW</h3>
                             </div>
                         </div>
                     </div>
@@ -34,7 +57,7 @@ const FoodCarousel = () => {
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">LOW & SLOW</h3>
+                                <h3 className="text-white text-4xl font-bold">BAKE</h3>
                             </div>
                         </div>
                     </div>
@@ -46,7 +69,7 @@ const FoodCarousel = () => {
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">BAKE</h3>
+                                <h3 className="text-white text-4xl font-bold">GRILL</h3>
                             </div>
                         </div>
                     </div>
@@ -58,7 +81,7 @@ const FoodCarousel = () => {
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">GRILL</h3>
+                                <h3 className="text-white text-4xl font-bold">SMOKE</h3>
                             </div>
                         </div>
                     </div>
@@ -70,7 +93,7 @@ const FoodCarousel = () => {
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">SMOKE</h3>
+                                <h3 className="text-white text-4xl font-bold">PANS & PLANCHA</h3>
                             </div>
                         </div>
                     </div>
@@ -82,19 +105,7 @@ const FoodCarousel = () => {
                         </div>
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">PANS & PLANCHA</h3>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative overflow-hidden pb-125">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <img src={ meat } alt="" />
-                        </div>
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="flex justify-center items-center w-full h-full">
-                                <h3 className="text-white">DIRTY COOKING</h3>
+                                <h3 className="text-white text-4xl font-bold">DIRTY COOKING</h3>
                             </div>
                         </div>
                     </div>

@@ -25,10 +25,10 @@ const FirstLayout = () => {
                     <div className="absolute top-0 left-0 z-0">
                         <img src={ imgRight } alt="" />
                     </div>
-                    <div className="absolute top-2/3 md:top-1/2 left-1/2 transform -translate-x-1/2 text-center">
-                        <h3 className="text-xl md:text-4xl text-green-900 mb-3 md:mb-5">What size is right for you?</h3>
-                        <button className="bg-green-900 px-4 py-3 rounded-full text-xs md:text-base text-white">
-                            <span>VIEW EGGS</span>
+                    <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 text-center w-full">
+                        <h3 className="text-xl md:text-4xl text-green-900 mb-3 md:mb-5 px-4">What size is right for you?</h3>
+                        <button className="px-4 py-3 dark-green-btn">
+                            <span className="relative z-10 text-xs md:text-base text-white">VIEW EGGS</span>
                         </button>
                     </div>
                 </div>

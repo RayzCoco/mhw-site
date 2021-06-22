@@ -16,8 +16,8 @@ const SecondLayout = () => {
                             <div className="ml-auto md:max-w-1/2 p-6 md:p-0 flex justify-center items-start flex-col w-full h-full">
                                 <h4 className="text-white font-bold mb-4">Achieve restaurant quality food at home</h4>
                                 <div className="text-white text-left text-sm md:text-base mb-4">An EGG is your secret weapon, your passport to culinary triumph. Let it do the hard work whilst you lap up all the praise.</div>
-                                <a className="text-green-900 font-bold text-xs bg-green-100 px-4 py-3 inline-block rounded-full" href="#">
-                                    SHOP ACCESSORIES
+                                <a className="text-green-900 font-bold text-x px-4 py-3 inline-block green-btn" href="#">
+                                    <span className="relative z-10">SHOP ACCESSORIES</span>
                                 </a>
                             </div>
                         </div>
@@ -38,30 +38,44 @@ const SecondLayout = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-span-1 row-span-2">
-                <div className="relative overflow-hidden pb-125">
-                    <div className="absolute top-0 right-0 z-10">
-                        <div className="p-6">
-                            <span className="bg-green-900 text-white text-xs md:text-sm px-2 py-0.5 rounded">BESTSELLER</span>
+            <div className="col-span-1 row-span-2 hover-picture relative">
+                <a href="#">
+                    <div className="relative overflow-hidden pb-125">
+                        <div className="absolute top-0 left-0 z-10 w-full">
+                            <div className="flex justify-between p-6">
+                                <div>
+                                    <div className="bag-size">For L, XL, MM</div>
+                                </div>
+                                <div>
+                                    <span className="bg-green-900 text-white text-xs md:text-sm px-2 py-0.5 rounded">BESTSELLER</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="absolute top-0 left-0">
-                        <div>
-                            <img src={ bag } alt="" />
+                        <div className="absolute top-0 left-0 w-full h-full">
+                            <div className="first-img">
+                                <img src={ bag } alt="" />
+                            </div>
+                            <div className="second-img">
+                                <img src={ fire } alt="" />
+                            </div>
                         </div>
-                        <div className="w-full h-full opacity-0 invisible">
-                            <img src={ fire } alt="" />
-                        </div>
-                    </div>
-                    <div className="absolute top-0 left-0 w-full h-full z-10">
-                        <div className="p-6 flex flex-col justify-items-start justify-end w-full h-full">
-                            <div className="max-w-2/3 md:max-w-1/2 text-left">
-                                <h3 className="text-green-900 font-bold">Premium 100% Natural Oak & Hickory Lump Charcoal</h3>
-                                <div><p className="text-green-900">$25</p></div>
+                        <div className="absolute top-0 left-0 w-full h-full z-10">
+                            <div className="p-6 flex flex-col justify-items-start justify-end w-full h-full">
+                                <div className="max-w-2/3 md:max-w-1/2 item-desc">
+                                    <h3 className="font-bold">Premium 100% Natural Oak & Hickory Lump Charcoal</h3>
+                                    <div><p>$25</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div className="button-area">
+                        <div className="btn-bg">
+                            <button className="text-black px-6 py-2 yellow-btn font-bold">
+                                <span className="relative z-10">Add</span>
+                            </button>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div className="col-span-1 row-span-2">
                 <div className="relative overflow-hidden pb-125">
