@@ -69,15 +69,15 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <ul className="flex items-center">
-                                        <li className="mr-4"><a href="#">BUILD YOUR EGG</a></li>
+                                        <li className="mr-4"><a href="#" className="text-sm">BUILD YOUR EGG</a></li>
                                         <li className="mr-4">
                                             <button className="flex items-center">
-                                                <span className="font-bold">SHOP</span>
+                                                <span className="font-bold text-sm">SHOP</span>
                                                 <ExpandMoreIcon />
                                             </button>
                                         </li>
                                         <li>
-                                            <a href="#">EXPERIENCES</a>
+                                            <a href="#" className="text-sm">EXPERIENCES</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -87,10 +87,10 @@ const Header = () => {
                                 <div className="flex items-center">
                                     <ul className="hidden md:flex">
                                         <li className="mr-4">
-                                            <a href="#">RECIPES</a>
+                                            <a href="#" className="text-sm">RECIPES</a>
                                         </li>
                                         <li className="mr-4">
-                                            <a href="#">GUIDES</a>
+                                            <a href="#" className="text-sm">GUIDES</a>
                                         </li>
                                     </ul>
                                     <button className="mr-2">
@@ -112,15 +112,15 @@ const Header = () => {
                             </div>
                             <div className="hidden md:block">
                                 <ul className="flex items-center">
-                                    <li className="mr-4"><a href="#">BUILD YOUR EGG</a></li>
+                                    <li className="mr-4"><a href="#" className="text-sm">BUILD YOUR EGG</a></li>
                                     <li className="mr-4">
                                         <button className="flex items-center">
-                                            <span>SHOP</span>
+                                            <span className="text-sm">SHOP</span>
                                             <ExpandMoreIcon />
                                         </button>
                                     </li>
                                     <li>
-                                        <a href="#">EXPERIENCES</a>
+                                        <a href="#" className="text-sm">EXPERIENCES</a>
                                     </li>
                                 </ul>
                             </div>
@@ -130,10 +130,10 @@ const Header = () => {
                             <div className="flex items-center">
                                 <ul className="hidden md:flex">
                                     <li className="mr-4">
-                                        <a href="#">RECIPES</a>
+                                        <a href="#" className="text-sm">RECIPES</a>
                                     </li>
                                     <li className="mr-4">
-                                        <a href="#">GUIDES</a>
+                                        <a href="#" className="text-sm">GUIDES</a>
                                     </li>
                                 </ul>
                                 <button className="mr-2">
