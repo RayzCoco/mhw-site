@@ -2,8 +2,17 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
+import FooterAccordion from './FooterAccordion';
+
+import { useState } from 'react'
 
 const Footer = () => {
+    const [ footerLinks, setfooterLinks ] = useState([
+        { id: 1, title: "Shop", links: ["Eggs", "Boses", "Accessories", "Fuel"] },
+        { id: 2, title: "Support", links: ["Guides", "FAQs", "Stocklists", "Return Policy", "Warranty", "Delivery"] },
+        { id: 3, title: "About", links: ["About Us", "Became a Reseller", "Contact", "Privacy Policy", "Terms of Use", "Reseller Portal"] }
+    ])
+
     return (
         <footer className="bg-green-900 mt-20">
             <div className="container mx-auto py-10 px-6 md:px-0 md:py-20">
@@ -28,39 +37,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 mt-4 md:mt-0 text-left text-white">
-                        <div>
-                            <button className="opacity-50" disabled>Shop</button>
-                            <ul>
-                                <li><a className="py-2 block" href="#">Eggs</a></li>
-                                <li><a className="py-2 block" href="#">Boses</a></li>
-                                <li><a className="py-2 block" href="#">Accessories</a></li>
-                                <li><a className="py-2 block" href="#">Fuel</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <button className="opacity-50" disabled>Support</button>
-                            <ul>
-                                <li><a className="py-2 block" href="#">Guides</a></li>
-                                <li><a className="py-2 block" href="#">FAQs</a></li>
-                                <li><a className="py-2 block" href="#">Stocklists</a></li>
-                                <li><a className="py-2 block" href="#">Returns Policy</a></li>
-                                <li><a className="py-2 block" href="#">Warranty</a></li>
-                                <li><a className="py-2 block" href="#">Delivery</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <button className="opacity-50" disabled>About</button>
-                            <ul>
-                                <li><a className="py-2 block" href="#">About Us</a></li>
-                                <li><a className="py-2 block" href="#">Become a Reseller</a></li>
-                                <li><a className="py-2 block" href="#">Contact</a></li>
-                                <li><a className="py-2 block" href="#">Privacy Policy</a></li>
-                                <li><a className="py-2 block" href="#">Terms of Use</a></li>
-                                <li><a className="py-2 block" href="#">Reseller Portal</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <FooterAccordion footerLinks={ footerLinks } />
                 </div>
                 <div className="mb-12 text-center">
                     <h2 className="text-white text-5xl md:text-8xl">Big Green Egg</h2>
