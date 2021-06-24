@@ -13,7 +13,7 @@ const Chefs = ({ chefs }) => {
             }
         }}>
             { chefs.map((chef) => (
-                <SwiperSlide>
+                <SwiperSlide key={ chef.id }>
                     <div className="card">
                         <div className="relative overflow-hidden pb-125">
                             <div className="absolute top-0 left-0 w-full h-full">

@@ -54,7 +54,7 @@ const Header = () => {
                         <div>Logo</div>
                         <div className="flex items-center">
                             <button className="mr-2">
-                                <SearchIcon color="black" />
+                                <SearchIcon />
                             </button>
                             <a href="#" className="bg-green-900 bg-opacity-20 rounded-full w-8 h-8 box-border px-3 py-1">0</a>
                         </div>

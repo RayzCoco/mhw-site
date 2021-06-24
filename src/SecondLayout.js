@@ -1,7 +1,7 @@
 import restaurant from './img/restaurant-quality.webp'
 import bag from './img/bag.webp'
 import fire from './img/fire.webp'
-import video from './iceborne.webm'
+import video from './roast-chicken.webm'
 
 const SecondLayout = () => {
     return (

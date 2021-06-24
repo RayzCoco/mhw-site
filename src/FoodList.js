@@ -1,4 +1,3 @@
-import meat from './img/meat1.webp'
 import SwiperCore, { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.min.css';
@@ -14,12 +13,12 @@ const FoodList = ({ foods }) => {
             }
         }}>
             { foods.map((food) => (
-                <SwiperSlide>
+                <SwiperSlide key={ food.id }>
                     <a href="#">
                         <div className="card">
                             <div className="relative overflow-hidden pb-125">
                                 <div className="absolute top-0 left-0 w-full h-full">
-                                    <img src={ meat } alt="" />
+                                    <img src={ food.img } alt="" />
                                 </div>
                                 <div className="absolute top-0 left-0 w-full h-full">
                                     <div className="flex justify-center items-center w-full h-full">

@@ -1,4 +1,4 @@
-import video from './iceborne.webm'
+import video from './green-egg.webm'
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 const Banner = () => {
