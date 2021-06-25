@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+header.scroll-down {
+    @apply pointer-events-none;
+}
+
+header.scroll-up {
+    @apply pointer-events-auto;
+}
+
 .banner-height {
     min-height: calc(100vh - 30px);
 }
@@ -128,4 +136,14 @@
 
 .green-btn:hover::before, .yellow-btn:hover::before, .dark-green-btn:hover::before {
     @apply transform scale-110 duration-300;
+}
+
+.accordion-body {
+    @apply md:h-auto !important;
+    height: 0;
+}
+
+.accordion-body.expanded {
+    @apply opacity-100 transform transition-all duration-200 ease-in-out;
+    height: 200px;
 }

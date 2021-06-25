@@ -37,7 +37,11 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <FooterAccordion footerLinks={ footerLinks } />
+                    <div className="grid grid-cols-1 md:grid-cols-3 mt-4 md:mt-0 text-left text-white">
+                        {footerLinks.map(({ id, title, links, }) => (
+                            <FooterAccordion key={ id } id={ id } title={ title } links={ links } />
+                        ))}
+                    </div>
                 </div>
                 <div className="mb-12 text-center">
                     <h2 className="text-white text-5xl md:text-8xl">Big Green Egg</h2>

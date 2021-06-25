@@ -30,7 +30,7 @@ const Header = () => {
     }
 
     return (
-        <header className="fixed top-0 left-0 w-full z-20">
+        <header className={`fixed top-0 left-0 w-full z-20 ${isScrollDown}`}>
             <div className="bg-green-900 p-3 alert-bar relative">
                 <div className="px-8 md:px-0">
                     <div className="text-center">
