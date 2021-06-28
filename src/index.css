@@ -140,7 +140,7 @@ header.scroll-up {
 
 .accordion-body {
     @apply md:h-auto !important;
-    height: 0;
+    height: 0px;
 }
 
 .accordion-body.expanded {
