@@ -1,4 +1,4 @@
-import video from './videos/green-egg.webm'
+import video from '../videos/green-egg.webm'
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 
 const Banner = () => {

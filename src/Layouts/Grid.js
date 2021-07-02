@@ -1,7 +1,7 @@
 import FirstLayout from './FirstLayout'
 import SecondLayout from './SecondLayout'
 import ThirdLayout from './ThirdLayout'
-import FoodCarousel from './FoodCarousel'
+import FoodCarousel from '../Food/FoodCarousel'
 
 const Grid = () => {
     return (

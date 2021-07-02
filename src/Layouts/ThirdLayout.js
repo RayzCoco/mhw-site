@@ -1,9 +1,9 @@
-import bbq from './img/bbq.webp'
-import food from './img/food.webp'
-import tray from './img/tray.webp'
-import chicken from './img/chicken.webp'
-import roast from './img/roast.webp'
-import table from './img/table.webp'
+import bbq from '../img/bbq.webp'
+import food from '../img/food.webp'
+import tray from '../img/tray.webp'
+import chicken from '../img/chicken.webp'
+import roast from '../img/roast.webp'
+import table from '../img/table.webp'
 
 const ThirdLayout = () => {
     return (

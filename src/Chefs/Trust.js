@@ -1,6 +1,6 @@
-import chef1 from './img/chef1.webp'
-import chef2 from './img/chef2.webp'
-import chef3 from './img/chef3.webp'
+import chef1 from '../img/chef1.webp'
+import chef2 from '../img/chef2.webp'
+import chef3 from '../img/chef3.webp'
 
 import { useState } from 'react'
 import Chefs from './Chefs'

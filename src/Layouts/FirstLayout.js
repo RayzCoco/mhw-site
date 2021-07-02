@@ -1,6 +1,6 @@
-import banner from './img/green-egg-bottle.webp'
-import imgRight from './img/green-egg-bottle-right.webp'
-import video from './videos/alchemy.webm'
+import banner from '../img/green-egg-bottle.webp'
+import imgRight from '../img/green-egg-bottle-right.webp'
+import video from '../videos/alchemy.webm'
 
 const FirstLayout = () => {
     return (
