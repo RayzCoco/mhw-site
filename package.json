@@ -1,5 +1,6 @@
 {
   "name": "web-blog",
+  "homepage": "https://rayzcoco.github.io/mhw-site/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "mhw-site -d build"
   },
   "eslintConfig": {
     "extends": [
