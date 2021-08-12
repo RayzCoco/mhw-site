@@ -8,3 +8,6 @@ In the project directory, you first need to run:
 
 1. ### `npm install` to install of the node modules
 2. ### `npm run start` to run the project in development mode.
+
+Master branch - Development Build
+Deploy branch - Production Ready
