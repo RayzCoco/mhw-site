@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This home webpage is based on https://www.biggreenegg.co.uk/
 
+This page is created with ReactJS and TailwindCSS
+
 ## Steps to run
 
 In the project directory, you first need to run:
