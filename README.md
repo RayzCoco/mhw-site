@@ -1,12 +1,17 @@
-# Getting Started with Create React App
+# Copy of Biggreenegg
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+## Overview
 
-This home webpage is based on https://www.biggreenegg.co.uk/
+To test my skill out on copying pages above.
 
-This page is created with ReactJS and TailwindCSS
+## Technology/ Language Used
 
-## Steps to run
+1. HTML
+2. CSS (TailWindCSS)
+3. Javascript
+4. ReactJS
+
+## Steps to Run
 
 In the project directory, you first need to run:
 
